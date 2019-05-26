@@ -31,7 +31,11 @@ X = [ones(m, 1) X];
 %       
 
 
+[m,n]=size(X)
+X = [ones(m, 1) X];
 
+[max_m, max_n]= max(X*all_theta',[],2)
+p=max_n
 
 
 
